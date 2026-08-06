@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechZone Gadget Store</title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #007acc;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #cccccc;
+        }
+
+        
+        nav {
+            background-color: #333333;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007acc;
+            text-decoration: underline;
+        }
+
+        
+        .promo-banner {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #e6b800;
+        }
+
+     
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        
+        .category-section {
+            background: #ffffff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .category-section h2 {
+            font-size: 24px;
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            background-color: #fafafa;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+      
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #b12704;
+        }
+
+        .status-badge {
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .in-stock {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .out-stock {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>TechZone Gadget Store</h1>
+        <p>Your ultimate destination for modern electronics, smartphones, and accessories!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#smartphones">Smartphones</a>
+        <a href="#laptops">Laptops</a>
+        <a href="#audio">Audio & Headphones</a>
+        <a href="#wearables">Smartwatches</a>
+        <a href="#gaming">Gaming Accessories</a>
+    </nav>
+
+    <!-- Special Offers / New Arrivals Highlight -->
+    <div class="promo-banner">
+        🔥 Special Offer: Get 15% off on all New Arrivals & Free Delivery on Orders Over $500! 🔥
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- 1. SMARTPHONES -->
+        <section id="smartphones" class="category-section">
+            <h2>Smartphones</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Smartphone">
+                    <div class="product-name">Apex Phone 14 Pro</div>
+                    <p class="product-desc">Features a 6.7-inch OLED display, high-speed processing chip, and an advanced triple-lens camera.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$999.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400" alt="Smartphone">
+                    <div class="product-name">Nexus Flip X</div>
+                    <p class="product-desc">An innovative horizontal folding smartphone built with a durable hinge and dual displays.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$1,199.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1533228876829-65c94e7b5025?w=400" alt="Smartphone">
+                    <div class="product-name">Vortex Lite 5G</div>
+                    <p class="product-desc">An affordable 5G option delivering reliable performance and all-day battery life.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$449.00</span>
+                        <span class="status-badge out-stock">Out of Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. LAPTOPS -->
+        <section id="laptops" class="category-section">
+            <h2>Laptops</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="Laptop">
+                    <div class="product-name">QuantumBook Pro 16</div>
+                    <p class="product-desc">Equipped with a powerful 10-core processor, 32GB RAM, and a bright color-accurate screen.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$1,899.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptop">
+                    <div class="product-name">AeroStream Air 13</div>
+                    <p class="product-desc">Ultra-thin and lightweight chassis designed for students and remote workers with silent cooling.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$899.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400" alt="Laptop">
+                    <div class="product-name">Titan Forge 17R</div>
+                    <p class="product-desc">High-end desktop replacement laptop packed with a dedicated top-tier graphics card.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$2,499.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AUDIO & HEADPHONES -->
+        <section id="audio" class="category-section">
+            <h2>Audio & Headphones</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+                    <div class="product-name">SonicShield ANC-90</div>
+                    <p class="product-desc">Premium over-ear headphones featuring industry-leading active noise cancellation and high-fi audio.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$299.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Earbuds">
+                    <div class="product-name">EchoBuds Pro Wireless</div>
+                    <p class="product-desc">True wireless earbuds featuring a compact charging case, touch controls, and water-resistance.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$149.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400" alt="Soundbar">
+                    <div class="product-name">PulseBar Cinema X</div>
+                    <p class="product-desc">A home theater soundbar system equipped with wireless subwoofers and immersive spatial sound.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$399.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SMARTWATCHES / WEARABLES -->
+        <section id="wearables" class="category-section">
+            <h2>Smartwatches / Wearables</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Smartwatch">
+                    <div class="product-name">Chronos Fit Track 3</div>
+                    <p class="product-desc">A fitness-focused smartwatch that tracks continuous heart rate, sleep quality, and workout metrics.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$199.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400" alt="Smartwatch">
+                    <div class="product-name">Aura Smart Ring Elite</div>
+                    <p class="product-desc">A minimalist smart ring built with medical-grade ceramic sensors to track wellness and steps.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$249.00</span>
+                        <span class="status-badge out-stock">Out of Stock</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400" alt="Smartwatch">
+                    <div class="product-name">Vanguard Horizon Watch</div>
+                    <p class="product-desc">A rugged standalone watch featuring multi-band GPS tracking, offline maps, and sapphire glass.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$349.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. GAMING ACCESSORIES -->
+        <section id="gaming" class="category-section">
+            <h2>Gaming Accessories</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400" alt="Keyboard">
+                    <div class="product-name">Spectre RGB Mechanical Keyboard</div>
+                    <p class="product-desc">Features responsive linear mechanical switches, custom programmable macro hotkeys, and vibrant lighting.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$129.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400" alt="Mouse">
+                    <div class="product-name">Velocity Pro Wireless Mouse</div>
+                    <p class="product-desc">An ultra-lightweight gaming mouse equipped with a precise 26K DPI optical sensor and lag-free connection.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$89.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400" alt="Gaming Headset">
+                    <div class="product-name">Immerse 7.1 Surround Headset</div>
+                    <p class="product-desc">Features spatial 3D positional audio drivers and a studio-quality retractable noise-canceling microphone.</p>
+                    <div class="product-meta">
+                        <span class="product-price">$119.00</span>
+                        <span class="status-badge in-stock">In Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2026 TechZone Gadget Store. All rights reserved. [ Designed for Diploma in IT Assignment.] </p>
+    </footer>
+
+</body>
+</html>
